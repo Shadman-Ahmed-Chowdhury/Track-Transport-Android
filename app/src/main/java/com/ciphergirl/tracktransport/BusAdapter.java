@@ -74,7 +74,7 @@ public class BusAdapter extends RecyclerView.Adapter<BusAdapter.BusViewHolder> i
 
             @Override
             protected void publishResults(CharSequence charSequence, FilterResults filterResults) {
-                filteredbuses = (List<Bus>)filterResults.values;
+                filteredbuses = (List<Bus>) filterResults.values;
                 notifyDataSetChanged();
             }
         };
