@@ -1,0 +1,87 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/parent"
+    tools:context="com.ciphergirl.tracktransport.HomeFragment"
+    android:orientation="vertical">
+
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="150dp"
+        android:layout_gravity="center_horizontal|top"
+        android:layout_marginTop="20dp"
+        android:paddingBottom="20dp"
+        android:src="@drawable/home_bus"
+
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="30dp"
+        android:gravity="left"
+        android:text="Get Route Information"
+        android:textColor="@color/PaleVioletRed"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <AutoCompleteTextView
+        android:id="@+id/sourceedittext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="30dp"
+        android:background="@drawable/edittextlayout"
+        android:hint="Enter Your Location or Source"
+        android:imeOptions="actionNext"
+        android:inputType="text"
+        android:paddingLeft="10dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp" />
+
+    <AutoCompleteTextView
+        android:id="@+id/destinationedittext"
+        android:paddingLeft="10dp"
+        android:paddingTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Your Destination"
+        android:background="@drawable/edittextlayout"
+        android:paddingBottom="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:inputType="text"
+        android:imeOptions="actionNext"
+
+        />
+
+    <Button
+        android:id="@+id/searchbutton"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="60dp"
+        android:background="@color/PaleVioletRed"
+        android:text="Search"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+
+        />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:onClick="hidekeyboard"
+        >
+    </FrameLayout>
+
+
+</LinearLayout>
